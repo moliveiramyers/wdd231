@@ -70,13 +70,13 @@ header span {
 .navigation a {
     text-decoration: none;
     padding: .8rem 10px;
-    color: var(--secondary-color);
+    color: var(--default-color);
     display: flex;
     justify-content: center;
 }
 
 .navigation a:hover {
-    background-color: var(--other-color);
+    background-color: var(--default-color);
     color: rgb(240, 148, 27);
 
 }
