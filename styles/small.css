@@ -77,7 +77,7 @@ header span {
 
 .navigation a:hover {
     background-color: var(--other-color);
-    font-weight: bold;
+    color: rgb(240, 148, 27);
 
 }
 
