@@ -1,0 +1,173 @@
+:root {
+    --default-color: #341E38;
+    --secondary-color: #6a3c72;
+    --other-color: #9496f8;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border: solid 1px #afaaaa;
+    column-gap: 2rem;
+}
+
+header img {
+    display: block;
+    width: 3rem;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 2rem;
+    color: var(--default-color);
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+    color: #341E38;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li {
+    border-bottom: solid 1px #afaaaa;
+    padding: 0.8rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: .8rem 10px;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+}
+
+.navigation a:hover {
+    background-color: var(--other-color);
+    font-weight: bold;
+
+}
+
+.navigation.current {
+    background-color: #afaaaa;
+}
+
+h1 {
+    margin-left: 10px;
+    text-align: center;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    padding-right: 1rem;
+}
+
+.social-icons img {
+    width: 3rem;
+    height: auto;
+}
+
+footer p {
+    text-align: center;
+    color: var(--default-color);
+    font-weight: bold;
+}
+
+.student-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+    color: var(--default-color);
+}
+
+.student-info section {
+    background-color: var(--other-color);
+    margin-bottom: 1rem;
+
+}
+
+.student-info h2 {
+    background-color: var(--default-color);
+    color: #b9baf3;
+    padding: .5rem;
+    margin: 0;
+}
+
+.student-info p {
+    padding: .5rem .8rem .5rem .8rem;
+}
+
+.certificate div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-evenly;
+
+}
+
+.course-card {
+    width: fit-content;
+    background-color: beige;
+    border-radius: 6px;
+    border: solid 1px rgba(0, 0, 0, 0.5);
+    width: 9rem;
+}
+
+.bnt {
+    width: fit-content;
+    background-color: wheat;
+    padding: .5rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    border: solid 1px  rgba(0, 0, 0, 0.5);
+}
+
+.bnt:hover{
+    background-color: var(--secondary-color);
+    color: wheat;
+    cursor: pointer;
+}
+
+.completed {
+    background-color: var(--secondary-color);
+    color: #b9baf3;
+}
+
+.total {
+    font-weight: bold;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <meta name="discription" content="Create a home page with certificate info">
+    <meta name="author" content="Marjorie Myers">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/cat.svg" alt="Logo" width="512" height="512">
+        <span>Marjorie Myers</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main class="student-info">
+        <h1 id="page-title">Home</h1>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto molestias fugit nobis
+                nihil.
+                Accusamus sint praesentium obcaecati, enim laborum inventore veritatis quae magni, fugit
+                necessitatibus
+                fuga deleniti harum omnis?</p>
+
+        </section>
+
+        <section class="student">
+            <h2>Student Photo</h2>
+            <figure><img src="images/marjorie-less.webp" alt="student photo" width="150" height="200"></figure>
+        </section>
+
+        <section class="certificate">
+            <h2>Web Certificate Courses</h2>
+
+            <button class="bnt" onclick="filterCourses('all')">All Courses</button>
+            <button class="bnt" onclick="filterCourses('wdd')">WDD Courses</button>
+            <button class="bnt" onclick="filterCourses('cse')">CSE Courses</button>
+            <p class="total" id="total-courses"></p>
+            <div id="course-container"></div>
+            <p class="total" id="total-credits"></p>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/marjorie_oliemyers/" target="_blank">
+                <img src="images/instagram.svg" alt="instagram" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/marjoriewomyers" target="_blank">
+                <img src="images/linkedin.svg" alt="linkedin" width="16" height="16">
+            </a>
+            <a href="https://moliveiramyers.github.io/wdd231/" target="_blank">
+                <img src="images/github.svg" alt="github" width="16" height="16">
+            </a>
+            <a href="https://www.facebook.com/marjorie.mayers.7/" target="_blank">
+                <img src="images/facebook.svg" alt="facebook" width="16" height="16">
+            </a>
+        </div>
+        <div class="bottom-info">
+            <p>©️<span id="year"></span> | Marjorie Myers | Portugal</p>
+            <p id="modified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
