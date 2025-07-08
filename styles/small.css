@@ -47,6 +47,8 @@ header span {
 
 .navigation {
     display: none;
+    font-size: large;
+    font-weight: bold;
 
 }
 
@@ -131,7 +133,9 @@ footer p {
 .student-info p {
     padding: .5rem .8rem .5rem .8rem;
 }
-
+.about p{
+    font-size: 1.5rem;
+}
 .certificate div {
     display: flex;
     flex-wrap: wrap;
@@ -146,6 +150,7 @@ footer p {
     border-radius: 6px;
     border: solid 1px rgba(0, 0, 0, 0.5);
     width: 9rem;
+    margin: .5rem;
 }
 
 .bnt {
@@ -154,10 +159,10 @@ footer p {
     padding: .5rem;
     margin-top: 1rem;
     border-radius: 6px;
-    border: solid 1px  rgba(0, 0, 0, 0.5);
+    border: solid 1px rgba(0, 0, 0, 0.5);
 }
 
-.bnt:hover{
+.bnt:hover {
     background-color: var(--secondary-color);
     color: wheat;
     cursor: pointer;
