@@ -144,6 +144,15 @@ function filterCourses(category) {
     selectcourses(filteredCourses);
 }
 
+const filterButtons = document.querySelectorAll(".bnt");
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const category = button.getAttribute("data-category");
+        filterCourses(category);
+    });
+});
+
 
 
 

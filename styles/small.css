@@ -5,7 +5,7 @@
 }
 
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Delius", cursive;
 }
 
 header {
@@ -133,9 +133,11 @@ footer p {
 .student-info p {
     padding: .5rem .8rem .5rem .8rem;
 }
-.about p{
+
+.about p {
     font-size: 1.5rem;
 }
+
 .certificate div {
     display: flex;
     flex-wrap: wrap;
