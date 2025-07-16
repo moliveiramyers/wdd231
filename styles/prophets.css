@@ -1,0 +1,46 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.prophets-cards {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; */
+    display: grid;
+    padding: 1rem;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card-builder {
+    /* display: grid;
+    padding: 1rem;
+    margin: 0.5rem;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+    /* flex: 1 1 300px; */
+    border: 1.5px solid rgba(44, 42, 42, 0.2);
+    text-align: center;
+    background-color: rgba(226, 226, 226, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    padding: .5rem;
+
+}
+
+.card-builder h2 {
+    text-align: center;
+
+}
+
+.card-builder img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+footer,
+h1 {
+    text-align: center;
+}
