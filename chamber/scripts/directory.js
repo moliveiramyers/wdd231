@@ -2,7 +2,7 @@
 
 const navbtn = document.querySelector("#ham-btn");
 const navBar = document.querySelector("#nav-bar");
-const hideH1 = document.querySelector("header h1")
+const hideP = document.querySelector("header p")
 let isListView = false;
 const membership = "data/members.json";
 const cards = document.querySelector("#company-container");
@@ -12,7 +12,7 @@ getCompanyData();
 navbtn.addEventListener("click", () => {
     navbtn.classList.toggle("show");
     navBar.classList.toggle("show");
-    hideH1.classList.toggle("hide");
+    hideP.classList.toggle("hide");
 });
 
 // last modified

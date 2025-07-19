@@ -6,7 +6,7 @@
         margin: auto;
     }
 
-    header h1.hide{
+    header p.hide{
         display: block;
     }
 

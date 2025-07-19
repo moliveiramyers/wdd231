@@ -109,7 +109,7 @@ main {
     display: block;
 }
 
-header h1.hide{
+header p.hide{
     display:none;
 }
 
