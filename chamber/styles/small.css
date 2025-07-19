@@ -109,6 +109,10 @@ main {
     display: block;
 }
 
+header h1.hide{
+    display:none;
+}
+
 .navigation ul {
     list-style: none;
     text-align: center;
@@ -163,8 +167,8 @@ main {
 
 #grid:hover,
 #list:hover{
-    background-color: #917b33;
-    color: #edddd4;
+    background-color: rgb(240, 148, 27);
+    color: var(--primary-color);
 }
 
 /* .menu {} */
@@ -224,6 +228,7 @@ main {
 
 .company-card img {
     /* flex-shrink: 0; */
+    padding-left: .3rem;
     width: 100px;
     height: auto;
     grid-column: 1/2;

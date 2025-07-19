@@ -6,6 +6,26 @@
         margin: auto;
     }
 
+    header h1.hide{
+        display: block;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul{
+        display: flex;
+    }
+
+    .navigation li{
+        border-bottom:0 ;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
     .today {
         flex-direction: row;
         margin: 2rem;
@@ -85,16 +105,18 @@
         white-space: normal;
     }
 
-    footer{
+    footer {
         flex-direction: row;
     }
 
-    .contact-info, .social-icons, .bottom-info {
+    .contact-info,
+    .social-icons,
+    .bottom-info {
         padding: 2rem;
         align-self: center;
     }
 
-    .contact-info{}
+    .contact-info {}
 
 
 }
