@@ -67,7 +67,7 @@
 
     #company-container.grid {
         display: grid;
-        padding: rem;
+        /* padding: rem; */
         gap: 1rem;
         grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     }
