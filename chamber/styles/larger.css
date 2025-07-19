@@ -1,0 +1,100 @@
+@media only screen and (min-width: 45rem) {
+
+
+    main {
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    .today {
+        flex-direction: row;
+        margin: 2rem;
+        gap: 0.5rem;
+    }
+
+    /* .events {} */
+
+    .current-weather {
+        padding-left: 1rem;
+        min-width: fit-content;
+        text-align: left;
+    }
+
+    .current-weather h2 {
+        margin-bottom: 0;
+        min-width: fit-content;
+        text-align: left;
+    }
+
+    .current-weather p,
+    .forecast p {
+        margin: .5rem;
+        min-width: fit-content;
+        text-align: left;
+    }
+
+    .forecast {
+        min-width: fit-content;
+    }
+
+    .forecast p {
+        font-size: 1.3rem;
+    }
+
+    .forecast h2 {
+        margin-bottom: 3rem;
+    }
+
+    #company-container.grid {
+        display: grid;
+        padding: rem;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+
+    /* #company-container.grid .company-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 0.5rem;
+    width: 100%;
+} */
+    .company-card img {
+        max-width: 100%;
+        height: auto;
+        align-self: center;
+    }
+
+    .company-card {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 100px 1fr;
+        background-color: var(--primary-color);
+        color: var(--text-color1);
+        border-radius: 6px;
+        padding: 1rem;
+        gap: 0.5rem;
+        align-items: center;
+        min-width: 250px;
+    }
+
+    .company-card a {
+        word-break: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+
+    .contact-info, .social-icons, .bottom-info {
+        padding: 2rem;
+        align-self: center;
+    }
+
+    .contact-info{}
+
+
+}

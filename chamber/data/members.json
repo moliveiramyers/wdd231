@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "Gracas Maria Costura",
+            "address": "Rua Miramangue, 10A - Planalto, Natal - RN, 59073-230, Brasil",
+            "phone": "+55(84)9874-5879",
+            "url": "https://maps.app.goo.gl/tbox8ZhdTJiVuVnv7",
+            "icon": "images/gracas-maria.webp",
+            "membership": 1
+        },
+        {
+            "name": "RedeMais - Planalto",
+            "address": "R. Mira Mangue, 675 - Planalto, Natal - RN, 59073-230, Brasil",
+            "phone": "+55(84)20208000",
+            "url": "http://www.redemaisrn.com.br/",
+            "icon": "images/redemais-planalto.webp",
+            "membership": 3
+        },
+        {
+            "name": "Supermercado Bom Jesus",
+            "address": "R. Mira Mangue, 960 - Planalto, Natal - RN, 59073-230, Brasil",
+            "phone": "+55(84)994641031",
+            "url": "https://maps.app.goo.gl/sVLxRbvT5Np3EmYh7",
+            "icon": "images/bomjesus-planalto.webp",
+            "membership": 2
+        },
+        {
+            "name": "El Shaday Bistro",
+            "address": "R. Monte Rei, 873 - Planalto, Natal - RN, 59073-150, Brasil",
+            "phone": "+55(84)36184099",
+            "url": "https://telepesquisa.com/rn/empresas/d/el-shaday-bistro",
+            "icon": "images/el-shaday.webp",
+            "membership": 1
+        },
+        {
+            "name": "Top Motos",
+            "address": "R. Monte Rei, 371 - Planalto, Natal - RN, 59073-150, Brasil",
+            "phone": "+55(84)36180516",
+            "url": "https://instagram.com/topmotos?igshid=YmMyMTA2M2Y=",
+            "icon": "images/top-motos.webp",
+            "membership": 2
+        },
+        {
+            "name": "Point do Planalto",
+            "address": "R. Monte Rei, 530 - Planalto, Natal - RN, 59073-020, Brasil",
+            "phone": "+55(84)987155307",
+            "url": "https://maps.app.goo.gl/HZYBe2mVtvbwD6Kp9",
+            "icon": "images/point-planalto.webp",
+            "membership": 2
+        },
+        {
+            "name": "ECO-Lógica Energia Solar",
+            "address": "R. Monte Celeste, 455 - ap. 304B - Planalto, Natal - RN, 59073-250, Brasil",
+            "phone": "+55(84)991467494",
+            "url": "http://www.eco-logicaenergiasolar.com/",
+            "icon": "images/energia-solar.webp",
+            "membership": 2
+        }
+    ]
+}
