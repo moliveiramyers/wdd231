@@ -6,7 +6,7 @@
         margin: auto;
     }
 
-    header p.hide{
+    header p.hide {
         display: block;
     }
 
@@ -14,12 +14,12 @@
         display: block;
     }
 
-    .navigation ul{
+    .navigation ul {
         display: flex;
     }
 
-    .navigation li{
-        border-bottom:0 ;
+    .navigation li {
+        border-bottom: 0;
     }
 
     .hamburger {
@@ -70,6 +70,16 @@
         /* padding: rem; */
         gap: 1rem;
         grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        margin: auto;
+    }
+
+    #company-premium {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        margin: 2rem auto;
+
+        
     }
 
     /* #company-container.grid .company-card {
@@ -84,6 +94,19 @@
         max-width: 100%;
         height: auto;
         align-self: center;
+    }
+
+    #company-premium .company-card{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--primary-color);
+        color: var(--text-color1);
+        border-radius: 6px;
+        padding: 1rem;
+        gap: 0.5rem;
+        align-items: center;
+        min-width: 250px;
     }
 
     .company-card {
