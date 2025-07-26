@@ -245,6 +245,11 @@ header p.hide {
     grid-row: 3/4;
 }
 
+.company-card .membership-level {
+    color: var(--text-color1);
+    font-size: 2rem;
+    font-weight: bolder;
+}
 .company-card .url {
     grid-row: 4/5;
     padding: .5rem;

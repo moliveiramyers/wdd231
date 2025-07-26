@@ -33,6 +33,7 @@ const displayCompanies = (companies) => {
         const compName = document.createElement("h2");
         const address = document.createElement("p");
         const phone = document.createElement("p");
+        const membershipLevel = document.createElement("p");
         const url = document.createElement("a");
 
 
@@ -43,6 +44,9 @@ const displayCompanies = (companies) => {
 
         phone.textContent = `Phone: ${company.phone}`;
         phone.classList.add("phone");
+        const capitalized = company.membership.charAt(0).toUpperCase() + company.membership.slice(1);
+        membershipLevel.textContent = capitalized;
+        membershipLevel.classList.add("membership-level")
         url.href = company.url;
         url.classList.add("url")
         url.textContent = company.url;
@@ -63,6 +67,7 @@ const displayCompanies = (companies) => {
         card.appendChild(compName);
         card.appendChild(address);
         card.appendChild(phone);
+        card.append(membershipLevel);
         card.appendChild(url);
         container.appendChild(card);
 
