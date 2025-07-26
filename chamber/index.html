@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planalto Chamber of Commerce</title>
+    <meta name="description"
+        content="The website purpose is to provide the means to strength the local Business in Natal">
+    <meta name="author" content="Marjorie Myers">
+    <meta property="og:title" content="Planalto Chamber of Commerce">
+    <meta property="og:description" content="Show the upcoming events, divulgate local market and business.">
+    <meta property="og:image" content="https://moliveiramyers.github.io/wdd231/chamber/images/planalto-natal.webp">
+    <meta property="og:url" content="https://moliveiramyers.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barrio&family=Boldonse&family=Comic+Relief:wght@400;700&family=Coming+Soon&family=Delius&family=Fascinate+Inline&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ribeye&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/directory.js"></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/handshake.svg" alt="amigos do planalto" width="512" height="512">
+        <p>Planalto Chamber of Commerce</p>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+    </header>
+
+    <section class="hero">
+        <figure>
+            <img src="images/planalto-natal.webp" alt="Planaltos commerce">
+        </figure>
+    </section>
+    <main>
+        <h1 id="page-title">Planalto Chamber of Commerce</h1>
+
+        <section class="call-action">
+            <h2>Ready to grow your business with us?</h2>
+            <p>Join a thriving network of professionals working to support local commerce and build a better future.</p>
+            <a href="join.html" class="cta-button">Join the Chamber Today</a>
+        </section>
+        <div class="today">
+            <section class="sect events">
+                <h2>Events</h2>
+                <figure>
+                    <img src="images/feira.webp" alt="feira do planalto" width="150" height="100">
+                </figure>
+
+                <div id="events">
+                    <p>On Saturday (18/07) near Planalto Train Station it will have a local Food Fair, with fresh fruits
+                        and vagetables cultivated by local farmers.</p>
+                </div>
+
+            </section>
+
+            <section class="sect current-weather">
+                <div class="align-svg">
+                    <h2>Current Weather</h2>
+                    <figure><img id="weather-icon"></figure>
+                </div>
+                <div id="weather-info">
+                    <p class="weather-info" id="temperature"></p>
+                    <p class="weather-info" id="weather"></p>
+                    <p class="weather-info" id="high"></p>
+                    <p class="weather-info" id="low"></p>
+                    <p class="weather-info" id="humidity"></p>
+                    <p class="weather-info" id="sunrise"></p>
+                    <p class="weather-info" id="sunset"></p>
+                </div>
+            </section>
+
+            <section class="sect forecast">
+                <h2>Weather Forecast</h2>
+                <p id="today"></p>
+                <p id="second-day"></p>
+                <p id="third-day"></p>
+            </section>
+        </div>
+        
+        <section>
+            <div id="company-premium"></div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p><strong>Planalto Chamber of Commerce</strong></p>
+            <p>Tv. Santa Maria, 26</p>
+            <p>Planalto, Natal</p>
+            <p>info@planaltocc.org</p>
+            <p>+55(84)9965-5698</p>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/marjorie_oliemyers/" target="_blank">
+                <img class="insta" src="images/instagram.svg" alt="instagram" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/marjoriewomyers" target="_blank">
+                <img src="images/linkedin.svg" alt="linkedin" width="48" height="48">
+            </a>
+            <a href="https://www.facebook.com/marjorie.mayers.7/" target="_blank">
+                <img src="images/facebook.svg" alt="facebook" width="48" height="48">
+            </a>
+        </div>
+        <div class="bottom-info">
+            <p>WDD231 Class Project</p>
+            <p>Marjorie Myers</p>
+            <p>©️<span id="year"></span> | Planalto Chamber of Commerce</p>
+            <p id="modified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
