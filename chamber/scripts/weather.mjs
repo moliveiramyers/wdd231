@@ -35,6 +35,8 @@ function dispalyResults(data) {
     const sunriseUnix = data.sys.sunrise;
     const sunsetUnix = data.sys.sunset;
     // const dt = data.sys.dt;
+    const iconImg = document.createElement("img");
+    weatherIcon.appendChild(iconImg);
 
     const options = { timeZone: "America/Fortaleza", hour: "2-digit", minute: "2-digit" };
 
@@ -52,10 +54,10 @@ function dispalyResults(data) {
     sRise.textContent = `Sunrise: ${sunriseDate.toLocaleTimeString("pt-BR", options)}`;
     sSet.textContent = `Sunset: ${sunsetDate.toLocaleTimeString("pt-BR", options)}`;
 
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', 'Weather Icon');
-    weatherIcon.setAttribute('width',"50");
-    weatherIcon.setAttribute('height',"50");
+    iconImg.setAttribute('src', iconsrc);
+    iconImg.setAttribute('alt', 'Weather Icon');
+    iconImg.setAttribute('width',"50");
+    iconImg.setAttribute('height',"50");
 }
 
 
