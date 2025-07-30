@@ -12,7 +12,7 @@ main,
 header {
     background-color: #F0EAD2;
     text-align: center;
-    max-width: 70rem;
+    max-width: 25rem;
     margin: auto;
     display: flex;
     flex-direction: column;
