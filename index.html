@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/home.js" defer></script>
+    <script type="module" src="scripts/home.js"></script>
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -62,10 +62,21 @@
             <h2>Web Certificate Courses</h2>
 
             <button class="bnt" data-category="all">All Courses</button>
+
             <button class="bnt" data-category="wdd">WDD Courses</button>
+
             <button class="bnt" data-category="cse">CSE Courses</button>
+
             <p class="total" id="total-courses"></p>
-            <div id="course-container"></div>
+            <div id="course-container">
+            </div>
+            <dialog id="dialogButton">
+                <h2>Course Info</h2>
+                <p>blabla</p>
+                <button id="closeButton">❌</button>
+
+            </dialog>
+
             <p class="total" id="total-credits"></p>
 
         </section>

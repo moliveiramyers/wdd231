@@ -1,0 +1,59 @@
+.first-anim div{
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent;
+    border-radius: 50%;
+    animation: spin 1s linear 1s infinite alternate;
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+}
+
+/* animation: [animation-name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];
+ */
+.first-anim div::after{
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes pulse {
+    0%, 100% {transform: translate(-50%, -50%) scale(1);}
+    50%{transform: translate(-50%, -50%) scale(1.25);}
+}
+.second-anim div{
+     margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent;
+    border-radius: 50%;
+    transition: transform 1.5s linear ;
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+}
+
+.second-anim div::after{
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transform:transform 1.5s ease-in-out;
+    font-size: 2rem;
+}
+
+.second-anim div:hover {
+    transform: rotate(360deg);
+}
+
+.second-anim div:hover::after{
+    transform: translate(-50%, -57%) scale(1.5)
+}
+

@@ -250,6 +250,7 @@ header p.hide {
     font-size: 2rem;
     font-weight: bolder;
 }
+
 .company-card .url {
     grid-row: 4/5;
     padding: .5rem;
@@ -288,6 +289,12 @@ header p.hide {
     background-color: var(--primary-color);
     color: var(--text-color1);
 
+}
+
+.company-card a {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 #company-container.list .company-card:nth-child(odd) {
