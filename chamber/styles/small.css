@@ -214,9 +214,6 @@ header p.hide {
 }
 
 
-
-
-
 .company-card {
     background-color: var(--primary-color);
     color: var(--text-color1);
@@ -317,8 +314,6 @@ header p.hide {
     font-weight: bolder;
 }
 
-
-
 #company-container.list .company-card h2 {
     font-size: 1rem;
     border: 0;
@@ -353,4 +348,229 @@ footer {
 
 .social-icons {
     margin: auto;
+}
+
+/* Join Page */
+
+form * {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    color: var(--primary-color);
+    font-family: var(--text-font);
+}
+
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    animation: slideFadeIn 1s ease-out;
+}
+
+label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    min-height: 3rem;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input:required:invalid,
+select:required:invalid {
+    border-right: 5px solid rgb(146, 18, 18);
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.6rem 2.5rem 0.6rem 0.75rem;
+    font-size: 1rem;
+    color: #333;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+    cursor: pointer;
+}
+
+input:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(3, 47, 95, 0.25);
+}
+
+select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+.animated-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.animated-btn:active {
+    transform: scale(0.95);
+}
+
+.cards-m {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    text-align: center;
+    align-content: center;
+    font-size: 1.5rem;
+    color: var(--text-color1);
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: sparkle 2.5s infinite;
+}
+
+.cards-m button {
+    background-color: var(--text-color1);
+    border-radius: 10px;
+    padding: 0.3rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cards-m button:hover {
+    background-color: #f7c935;
+    transform: scale(1.2);
+}
+
+/* .animated-btn:active {
+    transform: scale(0.95);
+} */
+
+.join-main section {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.join-main h2 {
+    width: 100%;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.join-main {
+    margin-bottom: 1rem;
+}
+
+@keyframes sparkle {
+
+    0%,
+    50% {
+
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+.div-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem;
+    gap: 3rem;
+}
+
+#subscription {
+    background-color: var(--text-color1);
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px rgba(8, 8, 8, 0.3);
+}
+
+.thankyou-main * {
+    color: #001427;
+
+}
+#star-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Let clicks go through */
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.star {
+  position: absolute;
+  top: -20px;
+  width: 10px;
+  height: 10px;
+  background: yellow;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall 3s linear forwards;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
 }

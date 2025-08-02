@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,19 +21,21 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script type="module" src="scripts/directorys.js"></script>
+    <script type="module" src="scripts/join.js"></script>
     <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
+      <div id="star-container"></div> <!-- falling stars go here -->
+
     <header>
         <img src="images/handshake.svg" alt="amigos do planalto" width="512" height="512">
-        <p>Planalto Chamber of Commerce</p>
+        <h1>Planalto Chamber of Commerce</h1>
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a class="current" href="directory.html">Directory</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
@@ -40,72 +43,10 @@
         <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
     </header>
 
-    <section class="hero">
-        <figure>
-            <img src="images/planalto-natal.webp" alt="Planaltos commerce">
-        </figure>
-    </section>
-    <main>
-        <h1 id="page-title">Planalto Chamber of Commerce</h1>
-        <div class="today">
-            <section class="sect events">
-                <h2>Events</h2>
-                <figure>
-                    <img src="images/feira.webp" alt="feira do planalto" width="150" height="100">
-                </figure>
+    <main class="thankyou-main"> 
+    <h1>Subscription Details</h1>
 
-                <div id="events">
-                    <p>On Saturday (18/07) near Planalto Train Station it will have a local Food Fair, with fresh fruits
-                        and vagetables cultivated by local farmers.</p>
-                </div>
-
-            </section>
-
-            <section class="sect current-weather">
-                <div class="align-svg">
-                    <h2>Current Weather</h2>
-                    <figure id="weather-icon"></figure>
-                </div>
-                <div id="weather-info">
-                    <p class="weather-info" id="temperature"></p>
-                    <p class="weather-info" id="weather"></p>
-                    <p class="weather-info" id="high"></p>
-                    <p class="weather-info" id="low"></p>
-                    <p class="weather-info" id="humidity"></p>
-                    <p class="weather-info" id="sunrise"></p>
-                    <p class="weather-info" id="sunset"></p>
-                </div>
-            </section>
-
-            <section class="sect forecast">
-                <h2>Weather Forecast</h2>
-                <p id="today"></p>
-                <p id="second-day"></p>
-                <p id="third-day"></p>
-            </section>
-                <!-- <p class="weather-info" id="temperature">10*C</p>
-                <p class="weather-info" id="weather">Cloudy</p>
-                <p class="weather-info" id="high">High: 85*</p>
-                <p class="weather-info" id="low">Low: 34*</p>
-                <p class="weather-info" id="humidity">Humidity: 34%</p>
-                <p class="weather-info" id="sunrise">Sunrise: 05:30</p>
-                <p class="weather-info" id="sunset">Sunset: 17:30</p>
-            </section>
-
-            <section class="sect forecast">
-                <h2>Weather Forecast</h2>
-                <p>Today: </p>
-                <p>Wednesday:</p>
-                <p>Thursday:</p>
-            </section> -->
-        </div>
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <section>
-            <div id="company-container"></div>
-        </section>
+    <div id="subscription"></div>
 
     </main>
     <footer>
@@ -124,9 +65,6 @@
             <a href="https://www.linkedin.com/in/marjoriewomyers" target="_blank">
                 <img src="images/linkedin.svg" alt="linkedin" width="48" height="48">
             </a>
-            <!-- <a href="https://moliveiramyers.github.io/wdd231/index.html" target="_blank">
-                <img src="images/github.svg" alt="github link" width="16" height="16">
-            </a> -->
             <a href="https://www.facebook.com/marjorie.mayers.7/" target="_blank">
                 <img src="images/facebook.svg" alt="facebook" width="48" height="48">
             </a>

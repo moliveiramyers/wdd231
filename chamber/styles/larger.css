@@ -139,7 +139,24 @@
         align-self: center;
     }
 
-    /* .contact-info {} */
+    /* .join-main  {
+         margin:3rem ;
+    } */
+     .div-cards{
+        margin: 2rem auto;
+     }
+     .cards-m{
+        width: 9.5rem;  
+        height: 9rem;   
+        margin-bottom: 3.5rem;   
+     }
 
+     .div-cards:last-child{
+        margin-bottom: 0;
+     }
+
+     .cards-m h3{
+        font-size: 1.5rem;
+     }
 
 }

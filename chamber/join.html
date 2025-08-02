@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planalto Chamber of Commerce</title>
+    <meta name="description"
+        content="The website purpose is to provide the means to strength the local Business in Natal">
+    <meta name="author" content="Marjorie Myers">
+    <meta property="og:title" content="Planalto Chamber of Commerce">
+    <meta property="og:description" content="Show the upcoming events, divulgate local market and business.">
+    <meta property="og:image" content="https://moliveiramyers.github.io/wdd231/chamber/images/planalto-natal.webp">
+    <meta property="og:url" content="https://moliveiramyers.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barrio&family=Boldonse&family=Comic+Relief:wght@400;700&family=Coming+Soon&family=Delius&family=Fascinate+Inline&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ribeye&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/join.js"></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/handshake.svg" alt="amigos do planalto" width="512" height="512">
+        <h1>Planalto Chamber of Commerce</h1>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+    </header>
+
+    <!-- <div class="hero">
+        <figure>
+            <img src="images/planalto-natal.webp" alt="Planaltos commerce">
+        </figure>
+    </div>-->
+    <main class="join-main"> 
+    <h1 id="page-title">Planalto Chamber of Commerce</h1>
+
+    <section>
+        <h2>Membership</h2>
+        <form method="GET" action="thankyou.html" class="signUp">
+            <h3>Join Planalto Chamber of Commerce</h3>
+            <!-- First Name, Last Name:
+              text type, required, name, title, and correct autocomplete value -->
+            <label>First Name
+                <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+            </label>
+            <label>Last Name
+                <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+            </label>
+            <!-- organizational title:
+               text type, name, title, autocomplete value of "organization-title",alpha characters, hyphens, and spaces with a minimum of seven (7) -->
+            <label>Organization Title
+                <input type="text" name="title" autocomplete="organization-title" title="Your First Name"
+                    pattern="[A-Za-z\s\-]{7,}" required>
+            </label>
+            <!-- email address:
+             email type, required, name, title, correct autocomplete value, and placeholder -->
+            <label>Email Address
+                <input type="email" name="email" title="Your Email" autocomplete="email" placeholder="name@email.com"
+                    required>
+            </label>
+            <!-- Mobile phone number:
+              telephone type, required, name, title, and correct autocomplete value -->
+            <label>Phone Number
+                <input type="tel" name="phone" title="A Phone Number with dashes" autocomplete="tel"
+                    placeholder="(84)9999-999-963" required>
+            </label>
+            <!-- business/organization's name
+             text type, required, name, title, and correct autocomplete value of "organization" -->
+            <label>Organization Name
+                <input type="text" name="organization" title="Enter The Name of Your Business or Organisation"
+                    autocomplete="organization" required>
+            </label>
+            <!-- membership level selection
+             <select></select>
+             Gold Membership; Silver Membership; Bronze Membership; NP Membership -->
+            <label>Select Your Membership
+                <select name="membership" required>
+                    <option value="">--Select--</option>
+                    <option value="gold">Golden Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="non-profitable">Non-Profitable</option>
+                </select>
+            </label>
+            <!-- business description
+              text area, title, name -->
+            <label>Business Description
+                <textarea title="Enter a Description of the Business" name="description" name="message" rows="5"
+                    cols="30" placeholder="Type your message here..."></textarea>
+            </label>
+            <!-- the timestamp, hidden type, name, and id. This field contains the current date and time that the form was loaded by the user. -->
+            <input type="hidden" name="timestamp" id="timestamp">
+            <!-- button 
+                input of type submit ; properly labeled in the text node of the button -->
+            <button type="submit" class="animated-btn">Sign Up for Membership</button>
+        </form>
+        
+
+        <div class="div-cards">
+            <div class="cards-m">
+                <h3>✨ Golden ✨ Membership</h3>
+                <button data-dialog="goldenDialog">Learn More</button>
+                <dialog id="goldenDialog" aria-label="Golden Membership Benefits">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta rem molestiae repellat magni autem similique incidunt, assumenda, exercitationem suscipit deleniti, voluptas error. Nam ratione, laboriosam quam quos impedit maiores.</p>
+                    <button class="closeDialog">X</button>
+                </dialog>
+            </div>
+
+            <div class="cards-m">
+                <h3>Silver Membership</h3>
+                <button data-dialog="silverDialog">Learn More</button>
+                <dialog id="silverDialog" aria-label="Silver Membership Benefits">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta rem molestiae repellat magni autem similique incidunt, assumenda, exercitationem suscipit deleniti, voluptas error. Nam ratione, laboriosam quam quos impedit maiores.</p>
+                    <button class="closeDialog">X</button>
+                </dialog>
+            </div>
+            <div class="cards-m">
+                <h3>Broze Membership</h3>
+                <button data-dialog="bronzeDialog">Learn More</button>
+                <dialog id="bronzeDialog" aria-label="Bronze Membership Benefits">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta rem molestiae repellat magni autem similique incidunt, assumenda, exercitationem suscipit deleniti, voluptas error. Nam ratione, laboriosam quam quos impedit maiores.</p>
+                    <button class="closeDialog">X</button>
+                </dialog>
+            </div>
+            <div class="cards-m">
+                <h3>Non-Profitable Membership</h3>
+                <button data-dialog="npDialog">Learn More</button>
+                <dialog id="npDialog" aria-label="Non-Profitable Membership Benefits">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta rem molestiae repellat magni autem similique incidunt, assumenda, exercitationem suscipit deleniti, voluptas error. Nam ratione, laboriosam quam quos impedit maiores.</p>
+                    <button class="closeDialog">X</button>
+                </dialog>
+            </div>
+        </div>
+
+    </section>
+
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p><strong>Planalto Chamber of Commerce</strong></p>
+            <p>Tv. Santa Maria, 26</p>
+            <p>Planalto, Natal</p>
+            <p>info@planaltocc.org</p>
+            <p>+55(84)9965-5698</p>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/marjorie_oliemyers/" target="_blank">
+                <img class="insta" src="images/instagram.svg" alt="instagram" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/marjoriewomyers" target="_blank">
+                <img src="images/linkedin.svg" alt="linkedin" width="48" height="48">
+            </a>
+            <a href="https://www.facebook.com/marjorie.mayers.7/" target="_blank">
+                <img src="images/facebook.svg" alt="facebook" width="48" height="48">
+            </a>
+        </div>
+        <div class="bottom-info">
+            <p>WDD231 Class Project</p>
+            <p>Marjorie Myers</p>
+            <p>©️<span id="year"></span> | Planalto Chamber of Commerce</p>
+            <p id="modified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
