@@ -79,7 +79,7 @@
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         margin: 2rem auto;
 
-        
+
     }
 
     /* #company-container.grid .company-card {
@@ -96,7 +96,7 @@
         align-self: center;
     }
 
-    #company-premium .company-card{
+    #company-premium .company-card {
         display: grid;
         grid-template-rows: auto auto auto auto;
         grid-template-columns: 1fr 1fr;
@@ -139,24 +139,30 @@
         align-self: center;
     }
 
-    /* .join-main  {
-         margin:3rem ;
-    } */
-     .div-cards{
-        margin: 2rem auto;
-     }
-     .cards-m{
-        width: 9.5rem;  
-        height: 9rem;   
-        margin-bottom: 3.5rem;   
-     }
+    .join-main section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 
-     .div-cards:last-child{
+    .div-cards {
+        margin: 1rem auto;
+        flex-direction: column;
+    }
+
+    .cards-m {
+        width: 9.5rem;
+        height: 9rem;
+        margin-right: 1.5rem;
+    }
+
+    .div-cards:last-child {
         margin-bottom: 0;
-     }
+    }
 
-     .cards-m h3{
+    .cards-m h3 {
         font-size: 1.5rem;
-     }
+    }
 
 }
