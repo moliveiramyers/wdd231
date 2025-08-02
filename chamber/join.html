@@ -46,108 +46,116 @@
             <img src="images/planalto-natal.webp" alt="Planaltos commerce">
         </figure>
     </div>-->
-    <main class="join-main"> 
-    <!-- <h1 id="page-title">Planalto Chamber of Commerce</h1> -->
+    <main class="join-main">
+        <!-- <h1 id="page-title">Planalto Chamber of Commerce</h1> -->
 
-    <section>
-        <h2>Membership</h2>
-        <form method="GET" action="thankyou.html" class="signUp">
-            <h3>Join Planalto Chamber of Commerce</h3>
-            <!-- First Name, Last Name:
+        <section>
+            <h2>Membership</h2>
+            <form method="GET" action="thankyou.html" class="signUp">
+                <h3>Join Planalto Chamber of Commerce</h3>
+                <!-- First Name, Last Name:
               text type, required, name, title, and correct autocomplete value -->
-            <label>First Name
-                <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
-            </label>
-            <label>Last Name
-                <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
-            </label>
-            <!-- organizational title:
+                <label>First Name
+                    <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                </label>
+                <label>Last Name
+                    <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                </label>
+                <!-- organizational title:
                text type, name, title, autocomplete value of "organization-title",alpha characters, hyphens, and spaces with a minimum of seven (7) -->
-            <label>Organization Title
-                <input type="text" name="title" autocomplete="organization-title" title="Your First Name"
-                    pattern="[A-Za-z\s\-]{7,}" required>
-            </label>
-            <!-- email address:
+                <label>Organization Title
+                    <input type="text" name="title" autocomplete="organization-title" title="Your First Name"
+                        pattern="[A-Za-z\s\-]{7,}" required>
+                </label>
+                <!-- email address:
              email type, required, name, title, correct autocomplete value, and placeholder -->
-            <label>Email Address
-                <input type="email" name="email" title="Your Email" autocomplete="email" placeholder="name@email.com"
-                    required>
-            </label>
-            <!-- Mobile phone number:
+                <label>Email Address
+                    <input type="email" name="email" title="Your Email" autocomplete="email"
+                        placeholder="name@email.com" required>
+                </label>
+                <!-- Mobile phone number:
               telephone type, required, name, title, and correct autocomplete value -->
-            <label>Phone Number
-                <input type="tel" name="phone" title="A Phone Number with dashes" autocomplete="tel"
-                    placeholder="(84)9999-999-963" required>
-            </label>
-            <!-- business/organization's name
+                <label>Phone Number
+                    <input type="tel" name="phone" title="A Phone Number with dashes" autocomplete="tel"
+                        placeholder="(84)9999-999-963" required>
+                </label>
+                <!-- business/organization's name
              text type, required, name, title, and correct autocomplete value of "organization" -->
-            <label>Organization Name
-                <input type="text" name="organization" title="Enter The Name of Your Business or Organisation"
-                    autocomplete="organization" required>
-            </label>
-            <!-- membership level selection
+                <label>Organization Name
+                    <input type="text" name="organization" title="Enter The Name of Your Business or Organisation"
+                        autocomplete="organization" required>
+                </label>
+                <!-- membership level selection
              <select></select>
              Gold Membership; Silver Membership; Bronze Membership; NP Membership -->
-            <label>Select Your Membership
-                <select name="membership" required>
-                    <option value="">--Select--</option>
-                    <option value="gold">Golden Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="non-profitable">Non-Profitable</option>
-                </select>
-            </label>
-            <!-- business description
+                <label>Select Your Membership
+                    <select name="membership" required>
+                        <option value="">--Select--</option>
+                        <option value="gold">Golden Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="non-profitable">Non-Profitable</option>
+                    </select>
+                </label>
+                <!-- business description
               text area, title, name -->
-            <label>Business Description
-                <textarea title="Enter a Description of the Business" name="description" name="message" rows="5"
-                    cols="30" placeholder="Type your message here..."></textarea>
-            </label>
-            <!-- the timestamp, hidden type, name, and id. This field contains the current date and time that the form was loaded by the user. -->
-            <input type="hidden" name="timestamp" id="timestamp">
-            <!-- button 
+                <label>Business Description
+                    <textarea title="Enter a Description of the Business" name="description" rows="5" cols="30"
+                        placeholder="Type your message here..."></textarea>
+                </label>
+                <!-- the timestamp, hidden type, name, and id. This field contains the current date and time that the form was loaded by the user. -->
+                <input type="hidden" name="timestamp" id="timestamp">
+                <!-- button 
                 input of type submit ; properly labeled in the text node of the button -->
-            <button type="submit" class="animated-btn">Sign Up for Membership</button>
-        </form>
-        
+                <button type="submit" class="animated-btn">Sign Up for Membership</button>
+            </form>
 
-        <div class="div-cards">
-            <div class="cards-m">
-                <h3>✨ Golden ✨ Membership</h3>
-                <button data-dialog="goldenDialog">Learn More</button>
-                <dialog id="goldenDialog" aria-label="Golden Membership Benefits">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta rem molestiae repellat magni autem similique incidunt, assumenda, exercitationem suscipit deleniti, voluptas error. Nam ratione, laboriosam quam quos impedit maiores.</p>
-                    <button class="closeDialog">X</button>
-                </dialog>
+
+            <div class="div-cards">
+                <div class="cards-m">
+                    <h3>✨ Golden ✨ Membership</h3>
+                    <button data-dialog="goldenDialog">Learn More</button>
+                    <dialog id="goldenDialog" aria-label="Golden Membership Benefits">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta rem molestiae
+                            repellat magni autem similique incidunt, assumenda, exercitationem suscipit deleniti,
+                            voluptas error. Nam ratione, laboriosam quam quos impedit maiores.</p>
+                        <button class="closeDialog">X</button>
+                    </dialog>
+                </div>
+
+                <div class="cards-m">
+                    <h3>Silver Membership</h3>
+                    <button data-dialog="silverDialog">Learn More</button>
+                    <dialog id="silverDialog" aria-label="Silver Membership Benefits">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta rem molestiae
+                            repellat magni autem similique incidunt, assumenda, exercitationem suscipit deleniti,
+                            voluptas error. Nam ratione, laboriosam quam quos impedit maiores.</p>
+                        <button class="closeDialog">X</button>
+                    </dialog>
+                </div>
+                <div class="cards-m">
+                    <h3>Broze Membership</h3>
+                    <button data-dialog="bronzeDialog">Learn More</button>
+                    <dialog id="bronzeDialog" aria-label="Bronze Membership Benefits">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta rem molestiae
+                            repellat magni autem similique incidunt, assumenda, exercitationem suscipit deleniti,
+                            voluptas error. Nam ratione, laboriosam quam quos impedit maiores.</p>
+                        <button class="closeDialog">X</button>
+                    </dialog>
+                </div>
+                <div class="cards-m">
+                    <h3>Non-Profitable Membership</h3>
+                    <button data-dialog="npDialog">Learn More</button>
+                    <dialog id="npDialog" aria-label="Non-Profitable Membership Benefits">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta rem molestiae
+                            repellat magni autem similique incidunt, assumenda, exercitationem suscipit deleniti,
+                            voluptas error. Nam ratione, laboriosam quam quos impedit maiores.</p>
+                        <button class="closeDialog">X</button>
+                    </dialog>
+                </div>
             </div>
 
-            <div class="cards-m">
-                <h3>Silver Membership</h3>
-                <button data-dialog="silverDialog">Learn More</button>
-                <dialog id="silverDialog" aria-label="Silver Membership Benefits">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta rem molestiae repellat magni autem similique incidunt, assumenda, exercitationem suscipit deleniti, voluptas error. Nam ratione, laboriosam quam quos impedit maiores.</p>
-                    <button class="closeDialog">X</button>
-                </dialog>
-            </div>
-            <div class="cards-m">
-                <h3>Broze Membership</h3>
-                <button data-dialog="bronzeDialog">Learn More</button>
-                <dialog id="bronzeDialog" aria-label="Bronze Membership Benefits">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta rem molestiae repellat magni autem similique incidunt, assumenda, exercitationem suscipit deleniti, voluptas error. Nam ratione, laboriosam quam quos impedit maiores.</p>
-                    <button class="closeDialog">X</button>
-                </dialog>
-            </div>
-            <div class="cards-m">
-                <h3>Non-Profitable Membership</h3>
-                <button data-dialog="npDialog">Learn More</button>
-                <dialog id="npDialog" aria-label="Non-Profitable Membership Benefits">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta rem molestiae repellat magni autem similique incidunt, assumenda, exercitationem suscipit deleniti, voluptas error. Nam ratione, laboriosam quam quos impedit maiores.</p>
-                    <button class="closeDialog">X</button>
-                </dialog>
-            </div>
-        </div>
-
-    </section>
+        </section>
 
     </main>
     <footer>
