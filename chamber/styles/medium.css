@@ -1,0 +1,44 @@
+@media only screen and (min-width: 641px) {
+
+    /* dive where the cards from Discovery are */
+    #cardsInterest {
+        display: grid;
+    }
+
+    .interest-card {
+        display: grid;
+        grid-template-areas:
+            "image title"
+            "image address"
+            "image description"
+            "image button";
+        gap: 1rem;
+    }
+
+    .interest-card figure {
+        width: 100%;
+        height: auto;
+        align-content: center;
+        grid-area: image;
+    }
+
+    .interest-card h2 {
+        grid-area: title;
+    }
+
+    .interest-card p:first-child {
+        grid-area: address;
+    }
+
+    .interest-card p:last-child {
+        grid-area: description;
+    }
+
+    .interest-card button {
+        grid-area: button;
+        max-width: 200px;
+        margin: auto;
+    }
+
+
+}

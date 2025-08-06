@@ -1,4 +1,4 @@
-@media only screen and (min-width: 45rem) {
+@media only screen and (min-width: 1024px) {
 
 
     main {
@@ -139,7 +139,7 @@
         align-self: center;
     }
 
-    .join-main section{
+    .join-main section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -163,6 +163,62 @@
 
     .cards-m h3 {
         font-size: 1.5rem;
+    }
+
+    /* Discover Page */
+    #cardsInterest {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .interest-card {
+        display: grid;
+        grid-template-areas:
+            "image title"
+            "image address"
+            "image description"
+            "image button";
+
+    }
+
+    .interest-card figure {
+        width: 100%;
+        height: auto;
+        grid-area: image;
+    }
+
+    .interest-card h2 {
+        grid-area: title;
+    }
+
+    .interest-card p:first-child {
+        grid-area: address;
+    }
+
+    .interest-card p:last-child {
+        grid-area: description;
+    }
+
+    .interest-card button {
+        grid-area: button;
+    }
+
+    .interest-card  figure{
+        overflow: hidden;
+    }
+
+    .interest-card img {
+        transition: transform 0.3s ease;
+        display: block;
+        width: 100%;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+        .interest-card img:hover {
+            transform: scale(1.1);
+        }
     }
 
 }
