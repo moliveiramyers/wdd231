@@ -29,7 +29,7 @@ function displayResults(data) {
     // create html elements
     const divWeather = document.createElement('div');
     divWeather.classList.add('weather-card');
-    
+
     const title = document.createElement('h3');
     const temperature = document.createElement('p');
     const description = document.createElement('p');

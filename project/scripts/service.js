@@ -1,10 +1,3 @@
-import { activityFetch } from './activities.mjs';
-import { apiFetch } from './weather.mjs';
-
-apiFetch();
-activityFetch();
-
-
 // hamburger button
 const navbtn = document.querySelector("#ham-btn");
 const navBar = document.querySelector("#nav-bar");
@@ -29,3 +22,11 @@ year.textContent = today.getFullYear();
 lastModified.innerHTML = `Last Modified: ${document.lastModified}`;
 
 
+// Service Page DIALOG
+
+const openDialog = document.getElementById('openDialog');
+const healthCare = document.getElementById('healthCare');
+const closeDialog = document.getElementById('closeDialog');
+
+openDialog.addEventListener('click', () => healthCare.showModal());
+closeDialog.addEventListener('click', () => healthCare.close())
