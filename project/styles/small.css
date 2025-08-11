@@ -230,10 +230,12 @@ footer h4 {
 .hero section p {
     font-size: 2rem;
 }
-.learnmore{
+
+.learnmore {
     width: fit-content;
     margin: auto;
 }
+
 .hero section button {
     background-color: #4CAF50;
     color: white;
@@ -282,7 +284,7 @@ main h3 {
     display: flex;
     flex-direction: column;
     margin: auto;
-    align-items: center;    
+    align-items: center;
 }
 
 
@@ -419,12 +421,14 @@ main h3 {
     display: flex;
     flex-direction: column;
 }
-#openDialog{
+
+#openDialog {
     width: fit-content;
-    margin: auto;    
+    margin: auto;
 }
 
-.sign-up, #openDialog {
+.sign-up,
+#openDialog {
     background-color: #888011;
     color: var(--light-color);
     margin-top: .5rem;
@@ -438,13 +442,15 @@ main h3 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.sign-up:hover, #openDialog:hover {
+.sign-up:hover,
+#openDialog:hover {
     transform: scale(1.05);
     background-color: var(--darker-oliver);
     color: var(--light-color);
 }
 
-.sign-up:focus, #openDialog:focus {
+.sign-up:focus,
+#openDialog:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.6);
 }
@@ -738,19 +744,21 @@ main h3 {
 }
 
 /* ----------------------- Thank You Page ------------------------- */
-.thankyou-main *{
+.thankyou-main * {
     text-align: center;
     background-color: var(--light-cream);
 }
-.thankyou-main h1{
+
+.thankyou-main h1 {
     color: var(--darker-oliver);
     background-color: var(--light-color);
 }
-.ending-message{
+
+.ending-message {
     color: var(--darker-oliver);
     background-color: var(--light-color);
     font-size: 1.5rem;
-    margin: 0 1rem 1rem 1rem ;
+    margin: 0 1rem 1rem 1rem;
 }
 
 @keyframes sparkle {
