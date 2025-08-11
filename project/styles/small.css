@@ -230,7 +230,10 @@ footer h4 {
 .hero section p {
     font-size: 2rem;
 }
-
+.learnmore{
+    width: fit-content;
+    margin: auto;
+}
 .hero section button {
     background-color: #4CAF50;
     color: white;
@@ -433,7 +436,6 @@ main h3 {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    grid: button;
 }
 
 .sign-up:hover, #openDialog:hover {
@@ -771,7 +773,7 @@ main h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none;
+    /* pointer-events: none; */
     background: transparent;
     overflow: hidden;
     z-index: 9999;
