@@ -105,11 +105,40 @@ function crateActivityCards(data) {
     const fact = document.createElement("p");
     fact.textContent = `Did you know? ${activityCard.scientific_fact}`;
 
+
+
+
+    // //  Create Dialog
+    // const dialog = document.createElement('dialog');
+    // dialog.classList.add('dialog-fact');
+
+    // // create the elements of the dialog
+    
+
+
+    // // Close Modal Button
+    // const closeDialog = document.createElement('button');
+    // closeDialog.textContent = 'Close';
+
+    // closeDialog.addEventListener('click', () => dialog.close());
+
+    // // Appending the elements
+    // dialog.appendChild(fact);
+    // dialog.appendChild(closeDialog);
+
+    // // create the button to open the Dialog
+    // const openDialog = document.createElement('button');
+    // openDialog.classList.add('openDialog');
+    // openDialog.textContent = `Did you know?`;
+
+    // openDialog.addEventListener('click', () => dialog.showModal());
+
+
     card.appendChild(title);
     card.appendChild(image);
     card.appendChild(activity);
-
     card.appendChild(fact);
+
 
     cardContainer.appendChild(card);
   }
