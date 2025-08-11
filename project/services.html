@@ -47,7 +47,9 @@
         <div class="table-services">
             <table class="services-table">
                 <thead>
-                    <th class="table-th" colspan="2">Services</th>
+                    <tr>
+                        <th class="table-th" colspan="2">Service</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
@@ -76,13 +78,19 @@
                     </tr>
                 </tbody>
             </table>
-            <a href="contact.html"><button class="sign-up">Schedule Service</button></a>
+            <button class="sign-up" onclick="location.href='contact.html'">Schedule Service</button>
             <section class="video-section">
                 <h2>Learn More About Us</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/H42j6Zzo044?si=ZRIlXBaQxNpCaZUY"
                     title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/H42j6Zzo044?si=ZRIlXBaQxNpCaZUY"
+                    title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
             </section>
             <button id="openDialog">Learn More</button>
@@ -93,7 +101,7 @@
 
                     Did you know? Studies show that music therapy can reduce anxiety and improve cognitive function in
                     older adults, making it a powerful part of our care approach.</p>
-                    <button id="closeDialog">Close</button>
+                <button id="closeDialog">Close</button>
             </dialog>
 
         </div>
@@ -129,18 +137,17 @@
             <div class="help-cards">
                 <div class="action-box">
                     <h4 class="help">Ready to get a personalized budget?</h4>
-                    <a href="https://wa.me/351965883627" target="_blank" rel="noopener noreferrer">
-                        <button type="button">Chat with Us on WhatsApp</button>
-                    </a>
+                    <button type="button" onclick="location.href='https://wa.me/351965883627'">Chat with Us on
+                        WhatsApp</button>
+
                 </div>
 
                 <div class="action-box">
                     <h4 class="help">Looking to schedule your care service?</h4>
-                    <a href="forms.html">
-                        <button type="button">Book Your Service Now</button>
-                    </a>
-                </div>
+                    <button type="button" onclick="location.href='contact.html'">Book Your Service Now</button>
 
+                </div>
+            </div>
         </section>
 
     </main>
@@ -169,7 +176,9 @@
             <a href="services.html">Our Services</a>
             <!-- <a href="about.html">About Us</a> -->
             <a href="contact.html">Contact Us</a>
-             <a href="https://www.loom.com/share/01f1c015ce154e729b76ddf2d1c7aba9?sid=142823f9-ca47-4626-b78c-c9f66b2bd1c8">API/Data Video</a>
+            <a
+                href="https://www.loom.com/share/01f1c015ce154e729b76ddf2d1c7aba9?sid=142823f9-ca47-4626-b78c-c9f66b2bd1c8">API/Data
+                Video</a>
         </div>
         <div class="bottom-info">
 
