@@ -44,13 +44,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
-    const getString = window.location.search;
-    const myInfo = new URLSearchParams(getString);
+const getString = window.location.search;
+const myInfo = new URLSearchParams(getString);
 
 
 
 
-    containerSubs.innerHTML = `
+containerSubs.innerHTML = `
         <H2>Welcome ${myInfo.get('first')}</h2>
         <p>You were succesfully subscribed!</p>
         <p>Details:</p> 
