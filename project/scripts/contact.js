@@ -1,13 +1,16 @@
-// Hamburger
+
+// hamburger button
 const navbtn = document.querySelector("#ham-btn");
 const navBar = document.querySelector("#nav-bar");
-const hideP = document.querySelector("header p");
+const hideP = document.querySelector("header h1")
+const hideL = document.querySelector(".logo")
 
 
 navbtn.addEventListener("click", () => {
     navbtn.classList.toggle("show");
     navBar.classList.toggle("show");
     hideP.classList.toggle("hide");
+    hideL.classList.toggle("hide");
 });
 
 // last modified
@@ -19,7 +22,9 @@ const today = new Date();
 year.textContent = today.getFullYear();
 lastModified.innerHTML = `Last Modified: ${document.lastModified}`;
 
+const containerSubs = document.getElementById('serviceRequest');
 
+// Thank you page message display
 
 document.addEventListener('DOMContentLoaded', function () {
     const timestampField = document.getElementById('timestamp');
@@ -39,46 +44,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
-// Dialogs
-
-document.addEventListener('DOMContentLoaded', () => {
-    const openButton = document.querySelectorAll("button[data-dialog]");
-    openButton.forEach(button => {
-        const dialogId = button.getAttribute("data-dialog");
-        const dialog = document.getElementById(dialogId);
-        button.addEventListener("click", () => {
-            dialog.showModal();
-        });
-    });
-
-    const closeButton = document.querySelectorAll(".closeDialog");
-    closeButton.forEach(button => {
-        button.addEventListener("click", (event) => {
-            const dialog = event.target.closest("dialog");
-            dialog.close();
-        });
-    });
-})
+    const getString = window.location.search;
+    const myInfo = new URLSearchParams(getString);
 
 
-// Thank you page message dispaly
 
-const getString = window.location.search;
-const myInfo = new URLSearchParams(getString);
 
-const containerSubs = document.getElementById('subscription');
-
-containerSubs.innerHTML = `
-<H2>Welcome ${myInfo.get('first')}</h2>
-<p>You were succesfully subscribed!</p>
-<p>Details:</p> 
-<p>Name: ${myInfo.get('first')} ${myInfo.get('last')}</p>
-<p>Email: ${myInfo.get('email')}</p>
-<p>Phone Number: ${myInfo.get('phone')}</p>
-<p>Business Name: ${myInfo.get('organization')}</p>
-<p>Membership: ${myInfo.get('membership')}
-<p>at ${myInfo.get('timestamp')}</p>
-`;
+    containerSubs.innerHTML = `
+        <H2>Welcome ${myInfo.get('first')}</h2>
+        <p>You were succesfully subscribed!</p>
+        <p>Details:</p> 
+        <p>Name: ${myInfo.get('first')} ${myInfo.get('last')}</p>
+        <p>Email: ${myInfo.get('email')}</p>
+        <p>Phone Number: ${myInfo.get('phone')}</p>
+        <p>Date: ${myInfo.get('start-date')}
+        to ${myInfo.get('end-date')}</p>
+        <p>at ${myInfo.get('timestamp')}</p>
+        `;
 
 // Stars When subscribed using js + css
 
@@ -108,4 +90,3 @@ document.addEventListener("DOMContentLoaded", () => {
         if (count > 30) clearInterval(interval);
     }, 100);
 });
-

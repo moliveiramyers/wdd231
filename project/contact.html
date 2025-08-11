@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar Oliveira</title>
+    <meta name="description"
+        content="The website purpose is to present Lar Oliveira services of elderly people care and schedule the the service">
+    <meta name="author" content="Marjorie Myers">
+    <meta property="og:title" content="Lar Oliveira">
+    <meta property="og:description" content="Show our services and sell it.">
+    <meta property="og:url" content="https://moliveiramyers.github.io/wdd231/project/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="module" src="scripts/contact.js"></script>
+    <link rel="icon" href="olive-branch.ico">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html"><img class="logo" src="images/olive-branch.svg" alt="Company Icon" width="70"
+                height="70"></a>
+        <h1>Lar Oliveira | Your Caregiver</h1>
+
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="current"><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <h2>Get the Care You Deserve</h2>
+            <p>
+                At Lar Oliveira, we understand how important it is to find trustworthy and compassionate care for
+                yourself or your loved ones.
+                Use the form below to schedule a personalized care service tailored to your needs. Whether it's daily
+                support or occasional assistance,
+                our dedicated team is here to help make life easier and more comfortable for you.
+            </p>
+        </section>
+
+        <form method="GET" action="thankyou.html" class="contact-form">
+            <h3>Schedule Our Service Now</h3>
+
+            <label>First Name
+                <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+            </label>
+            <label>Last Name
+                <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+            </label>
+
+            <label>Email Address
+                <input type="email" name="email" title="Your Email" autocomplete="email" placeholder="name@email.com"
+                    required>
+            </label>
+
+            <label>Phone Number
+                <input type="tel" name="phone" title="A Phone Number with dashes" autocomplete="tel"
+                    placeholder="+351 999 999 963" required>
+            </label>
+
+            <label for="address">Your Location / Address
+                <input type="text" id="address" name="address"
+                    placeholder="e.g., Rua das Oliveiras, Vila Nova de Famalicão" required>
+            </label>
+            <label>Select Service
+                <select name="service" required>
+                    <option value="">--Select--</option>
+                    <option value="personalCare">Personal Care</option>
+                    <option value="mealPreparation">Meal Preparation</option>
+                    <option value="companionship">Companionship</option>
+                    <option value="medicationReminders">Medication Reminders</option>
+                    <option value="mobilityAssistance">Mobility Assistances</option>
+                    <option value="housekeeping">Housekeeping</option>
+                </select>
+            </label>
+            <div class="date-range">
+                <div>
+                    <label for="start-date">Preferred Start Date
+                        <input type="date" id="start-date" name="start-date" required></label>
+                </div>
+                <div>
+                    <label for="end-date">Preferred End Date
+                        <input type="date" id="end-date" name="end-date" required></label>
+                </div>
+            </div>
+
+            <label>Additional Details
+                <textarea title="Enter aditional details" name="details" rows="5" cols="30"
+                    placeholder="Tell Us More About Your Needs..."></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+            <button type="submit" class="animated-btn">Request My Care Service</button>
+        </form>
+
+    </main>
+    <footer>
+        <h4>Lar Oliveira</h4>
+        <div class="info">
+            <div class="contact-info">
+                <h5>Contact Info</h5>
+                <p>Tv. Santa Maria, 26, Gondifelos, Vila Nova de Famalicao</p>
+                <p>info@laroliveira.com</p>
+                <p>(+351)922-206-247</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/marjorie_oliemyers/" target="_blank">
+                    <img class="insta" src="images/instagram.svg" alt="instagram" width="48" height="48">
+                </a>
+                <a href="https://www.linkedin.com/in/marjoriewomyers" target="_blank">
+                    <img src="images/linkedin.svg" alt="linkedin" width="48" height="48">
+                </a>
+                <a href="https://www.facebook.com/marjorie.mayers.7/" target="_blank">
+                    <img src="images/facebook.svg" alt="facebook" width="48" height="48">
+                </a>
+            </div>
+        </div>
+        <div class="page-links">
+            <a href="services.html">Our Services</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="bottom-info">
+
+            <p>©️ WDD231 Class Project | Marjorie Myers | <span id="year"></span> | Lar Oliveira</p>
+            <p id="modified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
