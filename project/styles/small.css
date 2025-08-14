@@ -27,6 +27,7 @@ h5,
 h6 {
     font-family: var(--title-font);
     color: var(--dark-green);
+    text-align: center;
 }
 
 
@@ -60,6 +61,10 @@ header p {
     border: none;
     cursor: pointer;
     color: var(--darker-oliver);
+    box-shadow: none;
+    transition: none;
+    margin: 0%;
+    padding: .5rem;
 }
 
 #ham-btn::before {
@@ -143,14 +148,14 @@ footer h4 {
     text-align: center;
 }
 
-footer div:nth-child(2){
+footer div:nth-child(2) {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-between;
 }
 
-footer div:nth-child(2) div:first-of-type{
+footer div:nth-child(2) div:first-of-type {
     margin-left: 1rem;
 }
 
@@ -237,7 +242,7 @@ button {
     margin: auto;
 }
 
-.hero section button, form button {
+/* button{
     background-color: #4CAF50;
     color: white;
     margin-top: .5rem;
@@ -251,15 +256,15 @@ button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.hero section button:hover, form button:hover {
+button:hover {
     background-color: #45a049;
     transform: scale(1.05);
 }
 
-.hero section button:focus, form button:focus {
+button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.6);
-}
+} */
 
 .hero figure {
     padding: 0;
@@ -554,10 +559,10 @@ main h3 {
 }
 
 
-.action-box button {
+button, #animated-btn {
     background-color: var(--fresh-green);
     border: none;
-    color: var(--button-text);
+    color: var(--light-color);
     padding: 0.75rem 1.8rem;
     font-size: 1.2rem;
     font-weight: 700;
@@ -567,7 +572,7 @@ main h3 {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.action-box button:hover {
+button:hover {
     background-color: var(--warm-gold);
     color: var(--deep-charcoal);
     transform: scale(1.05);
@@ -666,7 +671,7 @@ form select {
     cursor: pointer;
 }
 
-#animated-btn {
+/* #animated-btn {
     color: white;
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
@@ -683,7 +688,7 @@ form select {
 
 #animated-btn:active {
     transform: scale(0.95);
-}
+} */
 
 
 form label {

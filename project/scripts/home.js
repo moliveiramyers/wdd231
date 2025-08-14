@@ -5,6 +5,7 @@ apiFetch();
 activityFetch();
 
 
+
 // hamburger button
 const navbtn = document.querySelector("#ham-btn");
 const navBar = document.querySelector("#nav-bar");
@@ -18,6 +19,16 @@ navbtn.addEventListener("click", () => {
     hideP.classList.toggle("hide");
     hideL.classList.toggle("hide");
 });
+
+document.getElementById('myButton').onclick = function () {
+    window.location.href = 'contact.html';
+};
+
+document.getElementById('whatsApp').onclick = function () {
+    window.location.href = 'https://wa.me/351965883627';
+};
+
+// 'https://wa.me/351965883627'
 
 // last modified
 const year = document.querySelector("#year");
