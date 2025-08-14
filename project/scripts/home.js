@@ -8,7 +8,7 @@ activityFetch();
 // hamburger button
 const navbtn = document.querySelector("#ham-btn");
 const navBar = document.querySelector("#nav-bar");
-const hideP = document.querySelector("header h1")
+const hideP = document.querySelector("header p")
 const hideL = document.querySelector(".logo")
 
 

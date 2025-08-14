@@ -47,28 +47,29 @@ header img {
 
 }
 
-header h1 {
+header p {
     font-family: var(--title-font);
     text-align: center;
     background-color: var(--olive);
     color: #293613;
+    font-size: 2rem;
 }
 
-.hamburger {
+#ham-btn {
     background: none;
     border: none;
     cursor: pointer;
     color: var(--darker-oliver);
 }
 
-.hamburger::before {
+#ham-btn::before {
     content: "\2630";
     font-size: 2rem;
     color: var(--text-color1);
 
 }
 
-.hamburger.show::before {
+#ham-btn.show::before {
     content: "\00D7";
 }
 
@@ -78,7 +79,7 @@ header h1 {
     text-align: center;
 }
 
-header h1.hide {
+header p.hide {
     display: none;
 }
 
@@ -117,9 +118,9 @@ header h1.hide {
     transition: background-color 0.3s;
 }
 
-#nav-barpage-links a:hover {
+#nav-bar a:hover {
     background-color: var(--light-color);
-    color: var(--darker-oliver);
+    color: var(--deep-charcoal);
     border-radius: 4px;
 }
 
@@ -236,7 +237,7 @@ button {
     margin: auto;
 }
 
-.hero section button {
+.hero section button, form button {
     background-color: #4CAF50;
     color: white;
     margin-top: .5rem;
@@ -250,12 +251,12 @@ button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.hero section button:hover {
+.hero section button:hover, form button:hover {
     background-color: #45a049;
     transform: scale(1.05);
 }
 
-.hero section button:focus {
+.hero section button:focus, form button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.6);
 }
@@ -713,7 +714,7 @@ form textarea:focus {
     box-shadow: 0 0 0 3px rgba(124, 181, 24, 0.3);
 }
 
-form button {
+/* form button {
     background-color: var(--fresh-green);
     color: white;
     padding: 0.75rem 1.5rem;
@@ -724,13 +725,13 @@ form button {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(124, 181, 24, 0.5);
     transition: background-color 0.3s ease, transform 0.2s ease;
-}
+} */
 
-form button:hover {
+/* form button:hover {
     background-color: var(--darker-oliver);
     color: var(--white-light);
     transform: scale(1.05);
-}
+} */
 
 main form div:first-of-type {
     display: flex;
