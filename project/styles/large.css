@@ -12,7 +12,7 @@
      }
 
      /* ------------------- header ---------------- */
-     .navigation {
+     #nav-bar {
          display: grid;
          width: 100%;
          grid-column: 1/4;
@@ -23,7 +23,7 @@
          display: none;
      }
 
-     .navigation ul {
+     #nav-bar ul {
          list-style: none;
          margin: 0;
          padding: 0;
@@ -33,14 +33,14 @@
          background-color: var(--olive);
      }
 
-     .navigation li {
+     #nav-bar li {
          border-bottom: 1px solid rgba(163, 177, 138, 0.6);
          background-color: var(--olive);
          border: 0;
 
      }
 
-     .navigation a {
+     #nav-bar a {
          padding: 1rem;
          color: var(--dark-green);
          font-weight: bold;
@@ -48,7 +48,7 @@
          transition: background-color 0.3s;
      }
 
-     .navigation a:hover {
+     #nav-bar a:hover {
          background-color: var(--olive);
          color: var(--darker-oliver);
          border-radius: 4px;

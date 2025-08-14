@@ -94,7 +94,6 @@ function crateActivityCards(data) {
 
     const activity = document.createElement("p");
     activity.textContent = activityCard.activity;
-    activity.classList.add('p-styling');
 
     const image = document.createElement("img");
     image.src = activityCard.image;
