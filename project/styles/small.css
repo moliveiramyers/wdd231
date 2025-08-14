@@ -378,7 +378,7 @@ main h3 {
     margin: 1rem;
 }
 
-.services-table {
+table {
     width: 95%;
     margin: 1rem auto;
     border-collapse: collapse;
@@ -386,8 +386,8 @@ main h3 {
     background: var(--light-color);
 }
 
-.services-table td,
-.services-table th {
+table td,
+table th {
     background: transparent;
 }
 
@@ -395,22 +395,22 @@ main h3 {
     background-color: var(--darker-oliver) !important;
 }
 
-.services-table tbody tr:nth-child(even) {
+table tbody tr:nth-child(even) {
     background-color: var(--olive);
 }
 
-.services-table tbody tr:hover td {
+table tbody tr:hover td {
     background-color: var(--darker-oliver);
     color: white;
     transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-.services-table td,
-.services-table th {
+table td,
+table th {
     padding: 10px;
 }
 
-.services-table thead th {
+table thead th {
     background-color: var(--olive);
     color: white;
     font-family: var(--title-font);
