@@ -28,6 +28,7 @@ h6 {
     font-family: var(--title-font);
     color: var(--dark-green);
     text-align: center;
+    font-size: 2rem;
 }
 
 
@@ -142,11 +143,12 @@ footer * {
     color: var(--dark-green);
 }
 
+/* 
 footer h4 {
     font-size: 2rem;
     margin: 0;
     text-align: center;
-}
+} */
 
 footer div:nth-child(2) {
     display: flex;
@@ -237,10 +239,10 @@ footer div:last-child p {
     font-size: 2rem;
 }
 
-button {
+/* button {
     width: fit-content;
     margin: auto;
-}
+} */
 
 /* button{
     background-color: #4CAF50;
@@ -433,7 +435,6 @@ main h3 {
     margin: auto;
 }
 
-.sign-up,
 #openDialog {
     background-color: #888011;
     color: var(--light-color);
@@ -448,7 +449,7 @@ main h3 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.sign-up:hover,
+/* .sign-up:hover,
 #openDialog:hover {
     transform: scale(1.05);
     background-color: var(--darker-oliver);
@@ -459,9 +460,8 @@ main h3 {
 #openDialog:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.6);
-}
+} */
 
-.video-section {}
 
 .table-services a {
     margin-bottom: 1rem;
@@ -531,9 +531,12 @@ main h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+
 }
 
-.action-box {
+.help-cards>div {
     background-color: var(--light-cream);
     border: 2px solid var(--olive);
     padding: 1.5rem 2rem;
@@ -542,16 +545,16 @@ main h3 {
     text-align: center;
     box-shadow: 0 4px 8px rgba(163, 177, 138, 0.3);
     color: var(--light-color);
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); */
     max-width: 500px;
     height: auto;
+    margin: auto;
 }
 
-.action-box:hover {
+.help-cards:first-of-type:hover {
     box-shadow: 3px 6px 12px rgba(124, 181, 24, 0.5);
 }
 
-.help {
+.help-cards h4 {
     margin-bottom: 1rem;
     background-color: var(--light-cream);
     font-family: var(--text-font);
@@ -559,7 +562,8 @@ main h3 {
 }
 
 
-button, #animated-btn {
+button,
+#animated-btn {
     background-color: var(--fresh-green);
     border: none;
     color: var(--light-color);
@@ -570,6 +574,8 @@ button, #animated-btn {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(124, 181, 24, 0.6);
     transition: background-color 0.3s ease, transform 0.2s ease;
+    width: fit-content;
+    margin: auto;
 }
 
 button:hover {

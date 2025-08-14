@@ -32,10 +32,6 @@ document.getElementById('myButton').onclick = function () {
     window.location.href = 'contact.html';
 };
 
-document.getElementById('whatsApp').onclick = function () {
-    window.location.href = 'https://wa.me/351965883627';
-};
-
 // last modified
 const year = document.querySelector("#year");
 const lastModified = document.querySelector("#modified");

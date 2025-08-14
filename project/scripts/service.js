@@ -32,8 +32,11 @@ document.getElementById('myButton').onclick = function () {
     window.location.href = 'contact.html';
 };
 
-document.getElementById('whatsApp').onclick = function () {
+document.getElementById('WhatsApp').onclick = function () {
     window.location.href = 'https://wa.me/351965883627';
+};
+document.getElementById('bookButton').onclick = function () {
+    window.location.href = 'contact.html';
 };
 
 // last modified
