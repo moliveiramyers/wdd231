@@ -478,9 +478,9 @@ main h3 {
     margin: 0rem;
 }
 
-.image-roller figure {
+/* .image-roller figure {
     padding: 0%;
-}
+} */
 
 .image-roller::-webkit-scrollbar {
     height: 10px;
@@ -491,7 +491,7 @@ main h3 {
     border-radius: 5px;
 }
 
-.card {
+.image-roller figure {
     position: relative;
     flex: 0 0 auto;
     scroll-snap-align: start;
@@ -499,19 +499,20 @@ main h3 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 1rem;
+    padding: 0rem;
     margin-right: 0;
     width: 100%;
     width: 500px;
 }
 
-.card img {
+.image-roller figure img {
     max-width: 100%;
     display: block;
     border-radius: 8px;
+    padding: 0%;
 }
 
-.card figcaption {
+.image-roller figure figcaption {
     position: absolute;
     bottom: 0;
     left: 0;
